@@ -1,0 +1,20 @@
+{
+  "name": "serverless-chalange",
+  "version": "1.0.0",
+  "description": "",
+  "main": "handler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "invoke-local-getMetadata": "sls invoke local -f getMetadata --path request-mock/getMetadata.json --aws-profile rwogel",
+    "deploy": "serverless deploy --aws-profile rwogel"
+  },
+  "keywords": [],
+  "author": "Renan Ribeiro",
+  "license": "ISC",
+  "devDependencies": {
+    "serverless-offline": "^8.2.0"
+  },
+  "dependencies": {
+    "image-size": "^1.0.0"
+  }
+}
